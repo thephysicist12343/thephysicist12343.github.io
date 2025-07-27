@@ -6,5 +6,5 @@ Hello, my name is Aarav Rastogi! I'm a high school student interested in physics
 ## [Multivariable Calculus](multivariablecalc.md)
 ## [Fun Physics Problems](physproblems.md)
 ## [Modelling Desert Locust Distribution (ISEF 2025)](locust.md)
-## [Reading List](readinglist.md)
+## [Reading List & Book Reviews](readinglist.md)
 ## [Guitar](guitar.md)
