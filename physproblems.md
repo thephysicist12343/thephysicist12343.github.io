@@ -1,1 +1,2 @@
 # Fun Physics Problems
+On this page, I'm going to look at fun phhysics problems. I'm running this side-by-side to similar videos on my [Youtube channel](https://www.youtube.com/@aaravrastogi9466). Most of these problems are either from _Fundamentals of Physics_ by Halliday and Resnick (The Extended Edition, edited by Jearl Walker), or from _200 Puzzling Physics Problems_ by Gnädig, Honyek, and Riley, though I have specified the source of each problem, including some that I thought of myself. 
