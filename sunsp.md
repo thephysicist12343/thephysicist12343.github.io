@@ -16,7 +16,7 @@ When sine and cosine functions are added to each other, they can form periodic p
 
 > Fig. 2: Plot of $sin(2 /pi x) + cos(/pi x)$
 
-$E=mc^2
+$E=mc^2$
 ### How Fourier Transforms Work
 
 ### Discrete Fourier Transforms (DFTs)
