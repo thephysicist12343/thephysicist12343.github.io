@@ -14,7 +14,7 @@ When sine and cosine functions are added to each other, they can form periodic p
 
 <img width="360" height="213" alt="UnnamedNotebook-0c6ec2dd-b4a4-4b83-866c-20b38df17d72" src="https://github.com/user-attachments/assets/57cf5e4a-7e7b-4633-ad19-fd929c254eae" />
 
-> Fig. 2: Plot of $sin(2 /pi x) + cos(/pi x)$
+> Fig. 2: Plot of $/sin(2 /pi x) + /cos(/pi x)$
 
 $E=mc^2$
 ### How Fourier Transforms Work
