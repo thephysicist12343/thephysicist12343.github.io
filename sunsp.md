@@ -4,6 +4,7 @@ On this page, I am going to explain a project I worked on, where I analysed suns
 ## Fourier Analysis
 
 ### Introduction: The Premise and the Fourier Series
+<img width="456" height="288" alt="Screenshot 2025-07-31 185500" src="https://github.com/user-attachments/assets/fb9bfe89-d020-4eef-9ec4-71a43010f333" />
 
 ### How Fourier Transforms Work
 
