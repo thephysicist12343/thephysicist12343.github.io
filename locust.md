@@ -9,7 +9,7 @@ This study presents LocustTrack, a novel tool that contains both a short-term we
 
 Climatic data in the long-term model is taken for different Socioeconomic Pathways (SSP) scenarios, which represent different possible carbon emission scenarios. LocustTrack also pioneers the use of marine-data layers from Bio-ORACLE and predicted Dipole Mode Index (DMI) values depicting the state of the IOD from the National Aeronautics and Space Administration (NASA) . 
 
-An environmental justice index was created by comparing the number of swarm occurrences to control operations (as recorded by the FAO). This was then plotted on the Quantum Geographic Information System (QGIS), allowing for the identification of areas underserved by locust control efforts. 
+An environmental conditions index was created by comparing the number of swarm occurrences to control operations (as recorded by the FAO). This was then plotted on the Quantum Geographic Information System (QGIS), allowing for the identification of areas underserved by locust control efforts. 
 
 The SDM achieved an AUC of 0.983, while the weather-model, presented as a monthly-risk dashboard for farmers till 2099, had an accuracy of 97.4%. 
 
@@ -50,3 +50,18 @@ To answer our questions and achieve our aim, we explored three broad research qu
 3. Are any geographic areas vulnerable to attacks underserved by current locust control operations, and how can they be identified?
 
 To answer our questions, we created three models: a short-term breeding model to predict locust breeding, a long-term climate model to explore the influence of climate change and marine influences on locust distribution, and an environmental conditions map to explore the inequitable impact of locust swarm-associated damage. 
+
+## 5. Methodology
+
+### 5.1 Methodology for Climate Model 
+
+The climate model was a form of Species Distribution Model (SDM): SDMs are models that use current environmental data and species occurrence data to find the biological niche for a particular species, and then use future climate predictions to rpedict the distribution of such biological niches, and therefore, the distribution of the species. The researcher Damaris Zurell summarises the relevant points of SDMs very well in this [article](https://damariszurell.github.io/SDM-Intro). 
+
+For our SDM, we used locust occurrence data (specially supplied by the FAO for our project), consisting of 37859 data points, which we pre-processed in Excel. We also generated an equal number of non-occurrence points using Terra in R to effectively train our models. 
+
+We used several traditional climate variables, such as the 19 'bio-variables' from WorldClim, which have been used in earlier studies as well. However, we also incorporated crop data from GLAD, Human Footprint Data from Venter (2016), and Global Irrigation Data. Additionally, we incorporated marine variables such as Sea Surface Temperature (SST), sea salinity, and pH from Bio-Oracle, to act as proxies for the Indian Ocean Dipole (IOD), which allowed us to more effectively elucidate the relationship between climatic phenomena and locust distribution. 
+
+Using R, we extracted environmental data for each swarm. We then split the data, using 80% of the data for training the model, and the remaining 20% to test the accuracy of the model. Specifically, we took points after 2020-2021 as our testing data set, in accordance with a recommendation from Cyril Piou, an FAO Locust Forecasting Officer. This data was used to train three models: a Ridge Regression Model, an ordinary Generalised Linear Model (GLM), and an XGBoost model. Unlike other studies, our preliminary model showed that MaxEnt and Random Forest led to lower accuracy predictions, likely due to overfitting. This led us to omit the use of those models for the SDM. 
+
+We then forecasted the distribution for 4 emission scenarios: SSP 126, SSP 245, SSP 370, and SSP 585 (from lowest emission to highest emission). Our results are discussed in Section 6. 
+
